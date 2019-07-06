@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+	</head>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="https://sourcecodester.com">Sourcecodester</a>
+		</div>
+	</nav>
+<body>
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+		<h3 class="text-primary">JavaScript - Easy Image Slideshow</h3>
+		<hr style="border-top:1px dotted #ccc;"/>
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<center><img src="images/pic1.jpg" name="slideshow" height="180px" width="400px"></center>
+			<br />
+			<center>
+				<button onclick="autoPlay()" class="btn btn-success"><span class="glyphicon glyphicon-play"></span> Auto Play</button>
+				<button onclick="stop()" id="stop" style="display:none;" onclick="autoPlay()" class="btn btn-danger"><span class="glyphicon glyphicon-stop"></span> Stop Auto Play</button>
+				<button id="left" onclick="toggleImage(-1)"  class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span></button>
+				<button id="right" onclick="toggleImage(1)" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-right"></span></button>
+			</center>
+		</div>
+	</div>
+</body>
+<script src="js/script.js"></script>
+</html>
